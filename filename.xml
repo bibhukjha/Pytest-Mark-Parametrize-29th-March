@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="11" time="0.161" timestamp="2022-03-29T17:10:03.034883" hostname="DESKTOP-9S1BH0B"><testcase classname="test_case" name="test_divby5_1[5-True]" time="0.002" /><testcase classname="test_case" name="test_divby5_1[2-False]" time="0.002" /><testcase classname="test_case" name="test_divby5_1[10-True]" time="0.001" /><testcase classname="test_case" name="test_divby5_1[7-False]" time="0.001" /><testcase classname="test_case" name="test_divby5_1[9-True]" time="0.001"><failure message="assert False == True">num = 9, output = True
+
+    @pytest.mark.parametrize("num,output",[(5,True),(2,False),(10,True),(7,False),(9,True)])
+    def test_divby5_1(num, output):
+        out1 = main.divby5(num)
+&gt;       assert out1 == output
+E       assert False == True
+
+test_case.py:7: AssertionError</failure></testcase><testcase classname="test_case" name="test_divby7_1[14-True]" time="0.001" /><testcase classname="test_case" name="test_divby7_1[20-False]" time="0.001" /><testcase classname="test_case" name="test_divby9_1[17-False]" time="0.001" /><testcase classname="test_case" name="test_divby9_1[18-True]" time="0.001" /><testcase classname="test_case" name="test_divby11_1[121-True]" time="0.002" /><testcase classname="test_case" name="test_divby11_1[34-False]" time="0.001" /></testsuite></testsuites>
